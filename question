@@ -1,0 +1,924 @@
+  #unique values find
+#numbers=[10,20,10,30,20,40]
+# unique=[]
+# for n in numbers:
+# if n not in unique:
+# unique.append(n)
+#  print(unique)
+#manually ascending sort without sort()
+#numbers = [40,10,30,20,50]
+# for i in range(len(numbers)):
+#   for j in range(i + 1,len(numbers)):
+#       if numbers[i] > numbers[j]:
+#           numbers[i], numbers[j] =numbers[j], numbers[i]
+# print(numbers)
+#prime numbers find 
+#numbers=[2,3,4,5,6,7,8,9,10,11]
+# for n in numbers:
+#   if n > 1:
+#       prime =True
+#       for i in range(2,n):
+#           if n % i == 0:
+#               prime=False
+#               break
+#           if prime:
+#               print(n)
+#1-20 ke squares
+#squares =[n**2 for n in range(1,21)]
+# print(squares)
+#1-50 ke odd numbers
+#odd=[n for n in range(1,51) if n % 3 == 0]
+# print(odd)
+#given list se positive numbers
+#numbers= [10,-20,30,-40,50]
+# positive= [n for n in numbers if n > 0]
+# rint(positive)
+#given list ke elements square
+# numbers  = [1,2,3,4,5,6,7,8,9,10]
+# quares= [n **2 for n in numbers]
+# print(squares)
+#1-100 me 3 se didvisible numbers
+#numbers =[n for n in range(1,101)if n % 3 == 0]
+# print(numbers) 
+#3*3 matrix create aur  print 
+#matrix =[
+ #   [1,2,3], 
+#    [4,5,6],  
+#   [7,8,9]
+#]
+#total = 0
+#for row in matrix:
+#    for n in row:
+ #       total += n
+#print("sum:",total)
+#har row ka sum
+#matrix =[
+# [1,2,3],
+# [4,5,6],
+# [7,8,9]
+#]
+# for row in matrix:
+# print("Row sum:",sum(row))
+#har column ka sum 
+#matrix =[
+# [1,2,3],
+# [4,5,6],
+# [7,8,9]
+
+#]
+# for col in range(3):
+# total =0
+# for row in range(3):
+# total += matrix[row] [col]
+# print("column sum :",total)  
+# matrix ka diagonal sum
+#matrix =[
+# [1,2,3,],
+# [1,2,3],
+# [7,8,9]
+
+#]
+# total =0
+# for i in range (3):
+# total += matrix[i][i]
+# print("diagonal sum:",total)
+#nested list ko  singal list me convet
+# data=[[10,20],[30,40],[50,60]]
+# singel =[]
+# for row in data:
+#     for n in row:
+#         singel.append(n)
+# print(singel)
+#tuple
+# t=(10,20,30,40,50)
+# print(t) 
+#first last our middle
+# t =(10,20,30,40,50)
+# print("first:", t[0])
+# print("last:", t[-1])
+# print("middle:",t[len(t)//2])
+#tuple ko loop se print 
+# t =(10,20,30,40,56)
+# for x in t:
+#     print(x)
+#tuple ki lenght
+# t =(10,20,30,40,50)
+# print(len(t))
+#element ki occurrence count
+# t =(10,20,30,40,50,50,40,50)
+# print(t.count(50))
+#particular element ka index 
+# t =(10,20,30,40) 
+# print(t .index(30))
+#element exist karta ha ya nahi
+# t =(10,20,30,40)
+# if 30 in t:
+#     print("Element exists")
+# else:
+#     print("Element does not exist")
+# tuple revers
+# t =(10,20,30,40,50)
+# print(t[::-1])
+#do tuple concatenate
+# t1 = (10,20,30)
+# t2 = (40,50,60)
+# t3 = t1+t2
+# print(t3)
+#tuple list
+#t =(10,20,30)
+# my_list = list(t)
+# print(my_list)
+#tuple unpacking
+#nested tuple aur element access
+#[1][1]) 
+#maximum aur minimum
+# t =(10,50,20,40,30)
+# print("maximum:",max(t))
+# print("minimum:",min(t))
+#sum aur average
+# t = (10,20,30,40,50)
+# total = sum(t)
+# average = total / len(t)
+# print("sum:",total)
+# print("average:",average)
+#duplicate value
+# t = (10,20,10,30,20,40)
+# duplicates =[]
+# for x in t:
+#     if t. count(x)> 1 and x not in duplicates:
+#         duplicates.append(x)
+# print(duplicates)
+#unique elements
+# t =(10,20,10,30,20,40)
+# unique = []
+# for x in t:
+#     if x not in unique:
+#         unique.append(x)
+# print(unique)
+#ascending our descending
+# t = (40,10,30,20,50)
+# print("ascending:",sorted(t))
+# print("descending:",sorted(t,reverse =True)) 
+#student dictionary
+# student ={
+#     "name": "riya",
+#     "age": 18,
+#     "course":"python",
+#     "marks": 85
+
+# }
+# print(student)
+#key values key value pairs 
+# student ={
+#     "name":"sumit",
+#     "age": 17,
+#     "cours":"maths",
+#     "marks":58
+#
+# }
+# print(student.keys())
+# print(student.values())
+# print(student.items())
+#student ka name access
+# student =("rahul")
+# print(student) 
+#function baniye jo welcome massage print kare
+# def greed():
+#     print("welcome to python programming")
+# greed()
+#dictionary copy
+# original={
+#     "name":"Rahul",
+#     "marks":85
+
+# }
+# copied=original.copy()
+# print("Original:",original)
+# print("Copied:",copied)
+#dictionary clear
+# student={
+#     "name":"Rahul",
+#     "age":21
+
+# }
+# student.clear()
+# print(student)
+#salary 50000 employeees
+# employees={
+#     "Amit":45000,
+#     "Aman":60000,
+#     "Ankit":75000,
+#     "Priya":40000
+# }
+# for name,salary in employees.items():
+#     if salary>50000:
+#         print(name,salary)
+#lowest salary
+# employees={
+#     "Amit":45000,
+#     "Rahul":60000,
+#     "Ankit":35000,
+#     "Riya":30000
+
+# }
+# print(min(employees.values()))
+#average salary
+# employees={
+#     "Amit":45000,
+#     "Rahul":60000,
+#     "Priya":75000,
+#     "Neha":40000
+# }
+# total=sum(employees.values())
+# average=total/len(employees)
+# print("Average Salary:",average)
+#salary category
+# salary=int(input("Enter your salary:"))
+# if salary <20000:
+#     print("Low salary")
+# elif salary <50000:
+#     print("Medium Salary")
+# else:
+#     print("High Salary")
+#maximun value wali key 
+# employees={
+#     "Amit":45000,
+#     "Ankit":60000,
+#     "Riya":75000,
+#     "Neha":40000
+
+# }
+# highest=max(employees,key=employees.get)
+# print("Maximum value wali key :",highest)
+#salary ke basis par ascending sort
+# employees={
+#     "Amit":45000,
+#     "Rahul":60000,
+#     "Priya":75000,
+#     "Riya":40000
+
+# }
+# sorted_employees=dict(
+#     sorted(employees.items(),key=lambda x:x[1])
+
+# )
+# print(sorted_employees)
+# student marks
+# students={
+#     "Amit":78,
+#     "Sumit":92,
+#     "Priya":85,
+#     "Neha":67,
+#     "Ravi":73
+
+# }
+# print("Highest:",max (students.values()))
+# print("Lowest:",min(students.values()))
+# print("Average Marks:",) 
+# Average =sum (students.values())/len(students)
+
+# for name,marks in students.items():
+#     if marks >=40:
+#         print("Pass:",name)
+#     else:
+#         print("Fail:",name)
+#grade calculate
+# marks=85
+# if marks>=90:
+#     grade="A+"
+# elif marks>=80:
+#     grade="A"
+# elif marks >=70:
+#     grade="B"
+# elif marks>=60:
+#     grade="C"
+# elif marks>=50:
+#     grade="D"
+# else:
+#     grade="F"
+# print("Grade:",grade)
+#10% discount
+# product={
+#     "Laptop":55000,
+#     "Mobile":25000,
+#     "Tablet":18000,
+#     "Keyboard":1500
+
+# }
+# for product, price in product.items():
+#     discount_price=price-(price*20/100)
+#     print(product,discount_price)
+#price>20000
+# price=int(input("Enter price"))
+# if price>20000:
+#     price("Price is greater than20,000")
+# else:
+#     print("Price is 20,000 or less")
+#set create
+# numbers={10,20,30,40,50}
+# print(numbers)
+#new element add 
+# students={"Ravi":73,"Aman":85}
+# students["Sumit"]=90
+# print(students)
+# duplicate removal
+# numbers=[10,20,10,30,20,40,30,50]
+# unique=list(set(numbers))
+# print(unique)
+#common elements
+# list1=[10,20,30,40,50]
+# list2=[30,40,50,60,70,]
+# common=list(set(list1)&set(list2))
+# print(common)
+#frequency counter
+# numbers=[10,20,10,30,20,10,40]
+# frequency={}
+# for n in numbers:
+#     frequency[n]=frequency.get(n,0)+1
+# print(frequency)
+#word frequency
+# sentence="golu is easy and golu is powerful"
+# word=sentence.split()
+# frequency={}
+# for word in word:
+#     frequency[word]=frequency.get(word,0)+1
+# print(frequency)
+#student management
+# students=[
+#     {"name":"Amit","age":20,"course":"Python","marks":78},
+#     {"name":"Riya","age":21,"course":"Java","marks":92},
+#     {"name":"Priya","age":20,"course":"Python","marks":85},
+#     {"name":"Neha","age":22,"course":"SQL","marks":67},
+#     {"name":"Ravi","age":21,"course":"Python","marks":73,}
+
+# ]            
+# marks=[s["marks"]for s in students]
+# print("Highest:",max(marks))
+# print("Lowest:",min(marks))
+# print("Average:",sum(marks)/len(marks))
+# for s in students:
+#     if s["marks"]>=40:
+#         print(s["name"],"Pass")
+#     else:
+#         print(s["name"],"Fail")
+#emplpouees mangement
+# employees=[
+#     {"id":1,"name":"Ankit","department":"IT","salary":45000,"experience":3},
+#     {"id":2,"name":"Amit","department":"HR","salary":60000,"experience":6},
+#     {"id":3,"name":"Riya","department":"IT","salary":75000,"experience":8}
+
+# ]
+# salaries=[e["salary"]for e in employees]
+# print("Highest salary:",max(salaries))
+# print("Average salary:",sum(salaries)/len(salaries))
+# for e in employees:
+#     if e["salary"]>50000:
+#         print("Salary>50000:",e["name"])
+#     if e["experience"]>5:
+#         print("Experience>5:",e["name"])
+# import keyword as k 
+# print(k.kwlist)
+# print(len(k.kwlist))
+# print(k.iskeyword("hello"))
+# import copy 
+# x=[12,[10,20]]
+# y=copy.deepcopy(x)
+# y[1][0]=100
+# print(y,x)
+#shopping cort
+# products={
+#     "Laptop":55000,
+#     "Mobile":25000,
+#     "Keyboard":1500,
+#     "Mouse":800
+# }
+# cart={}
+# while True:
+#     product=input("Enter product or done:")
+#     if product=="done":
+#         break
+#     if product not in products:
+#         print("Product not available")
+#         continue
+#     quantity=int(input("Enter quantity:"))
+#     cart[product]=quantity
+# total=0
+# for product,quantity in cart.items():
+#     price=product[product]
+#     total+=price*quantity
+# print("Final Bill:",total)
+# contact book
+# contacts={}
+# while True:
+#     print("\n1.Add Contact")
+#     print("2.Serach Contact")
+#     print("3.Update Contact")
+#     print("4.Delete Contact")
+#     print("5.Show All Contact")
+#     print("6.Exit")
+#     choice=input("Enter choice:")
+#     if choice=="1":
+#         name=input("Name:")
+#         phone=input("Phone:")
+#         contacts[name]=phone
+#     elif choice=="2":
+#         name=input("Name:")
+#         print(contacts.get(name,"Contact not found"))
+#     elif choice=="3":
+#         name=input("Name:")
+#         phone=input("New Phone:")
+#         contacts[name]=phone
+#     elif choice=="4":
+#         name=input("Name:")
+#         contacts.pop(name,None)
+#     elif choice=="5":
+#         print(contacts)
+#     elif choice=="6":
+#         break
+#inventory management
+# inventory={
+#     "Laptop":10,
+#     "Mobile":20,
+#     "Keyboard":15,
+#     "Mouse":25
+
+# }
+# inventory["Laptop"]-=2
+# inventory["Mobile"]+=5
+# for product,stock in inventory.items():
+#     if stock<10:
+#         print("Low Stock:",product)
+# print(inventory)
+#anagram checker
+# str1="listen"
+# str2="silent"
+# if sorted(str1)==sorted(str2):
+#     print("Anagram")
+# else:
+#     print("Not Anagram")
+#unique duplicate words
+# sentence="python is easy and python is powerful"
+# words=sentence.split()
+# frequency={}
+# for word in words:
+#     frequency[word]=frequency.get(word,0)+1
+# print("Frequency:",frequency)
+# for word,count in frequency.items():
+#     if count==1:
+#         print("Unique:",word)
+#     else:
+#         print("Duplicate:",word)
+#character frequency
+# text="programming"
+# frequency={}
+# for ch in text:
+#     frequency[ch]=frequency.get(ch,0)+1
+# print(frequency)
+#most frequent element
+# numbers=[10,20,10,30,10,20]
+# frequency={}
+# for n in numbers:
+#     frequency[n]=frequency.get(n,0)+1
+# most=max (frequency,key=frequency.get)
+# print("Most frequent:",most)
+#second most frequent element
+#course ke according group
+# students=[
+#     ("Amit","Python"),
+#     ("Rahul","Java"),
+#     ("Priya","Python"),
+#     ("Neha","SQL"),
+#     ("Ravi","C++")
+
+# ]
+# groups={}
+# for name,course in students:
+#     if course not in groups:
+#         groups[course]=[]
+#     groups[course].append(name)
+# print(groups)
+#create and write a text file
+# try:
+#     with open ("welcome.txt","w")as file:
+#         file.write("Welcome to Python Programming.\n")
+#         file.write("We are learning file handling.\n")
+#         file.write("This is our first practical exercisee.\n")
+#     print("File created and data written successfully.")
+# except PermissionError:
+#     print("Error: You do not have permission to write this file.")
+# except OSError as e:
+#     print("File operation failed:",e) 
+#read a text file
+# try:
+#     with open("welcome.txt","r")as file:
+#         data =file.read()
+#     print("File Contents:")
+#     print(data)
+# except FileNotFoundError:
+#     print("Error: welcome.txt does not exist.")
+# except PermissionError:
+#     print("Error: Permission denied.")
+# except OSError as e:
+#     print("Unable to read the file:",e)
+# append data to a file 
+# try:
+#     with open("welcome.txt","a") as file:
+#         file.write("We are now learning exception handling.\n")
+#     print("New data appending successfully.")
+# except OSError as e:
+#     print("Error while appending data :",e)   
+#count lines, words and characters
+# try:
+#     with open ("welcome.txt","r")as file:
+#         data = file.read()
+#     lines=data.splitlines()
+#     words=data.split()
+#     characters=len (data)
+#     print("Total Lines:",len(lines))
+#     print("Total Words:",len (words))
+#     print("Total Characters:",characters)
+# except FileNotFoundError:
+#     print("File does not exist.")
+# except OSError as e:
+#     print("File error:",e)
+#handle invalid file names
+# filename=input("Enter filename:")
+# try:
+#     with open(filename,"r")as file:
+#         print(file.read())
+# except FileNotFoundError:
+#     print("Error:File not Found.")
+# except PermissionError:
+#     print("Error:You do not have permission to access this file.")
+# except IsADirectoryError:
+#     print("Error: You entered a directory instead of a file.")
+# except OSError as e:
+#     print("Unexpected file error:",e)
+#creat a student marks file 
+# try:
+#     name=input("Enter student name:").strip()
+#     if not name:
+#         raise ValueError("Student name cannot be empty.")
+#     marks=float(input("Enter marks out of 100:"))
+#     if not 0<= marks <=100:
+#         raise ValueError("Marks must be between 0 and 100.")
+#     with open ("student.txt","a")as file:
+#         file.write(f"{name},{marks}\n")
+#     print("Student record saved successfully.")
+# except ValueError as e:
+#     print("Invalid input:",e)
+# except OSError as e:
+#     print("Unable to save student record:",e)
+#problem statement
+# try:
+#     name=input("Enter student name:").strip()
+#     if not name:
+#         raise ValueError("Student name cannot be empty.")
+#     marks=float(input("Enter marks out of 100:"))
+#     if not 0 <= marks <= 100:
+#         raise ValueError("Marks must be between 0 and 100.")
+#     with open ("student.txt","a")as file:
+#         file.write(f"{name},{marks}\n")
+#     print("Student record saved successfully.")
+# except ValueError as e:
+#     print("Invalid input:",e)
+# except OSError as e:
+#     print("Unable to save student ")
+#  
+
+#probelm statement
+# try:
+#     total=0
+#     count=0
+#     with open ("students.txt","r")as file:
+#         for line_number,line in enumerate(file,start=1):
+#             if not line.strip():
+#                 continue
+#             try:
+#                 name,marks_text = line.strip().rsplit(",",1)
+#                 marks = float(marks_text)
+#                 if not name.strip():
+#                     raise ValueError("Student name is missing.")
+#                 if not 0 <= marks <= 100:
+#                     raise ValueError("marks are outside the valid range.")
+#                 total += marks
+#                 count +=1
+#             except ValueError as e:
+#                 print(f"Invalid record on line (line_number):{e}")
+#     if count >0:
+#         print("Total Students:",count)
+#         print("Average Marks:",round (total/count,2))
+#     else:
+#         print("No valid student records found.")
+# except FileNotFoundError:
+#     print("Student file does not exsit.")
+# except OSError as e:
+#     print("Unable to read student records:",e)
+
+
+# copy data from one file to another
+# try:
+#     with open ("source.txt","r") as source:
+#         data = source.read()
+#     with open("destination.txt","w") as destination:
+#         destination.write(data)
+#     print("File copied successfully.")
+# except FileNotFoundError:
+#     print("Source file does not exist.")
+# except PermissionError:
+#     print("Permission denied while accessing a file.")
+# except OSError as e:
+#     print("File copy failed:",e)
+
+
+#search for a word in a file 
+# try:
+#     search_word=input("Enter word to search:").strip().lower()
+#     if not search_word:
+#         raise ValueError("Search word cannot be empty.")
+#     count=0
+#     with open ("welcome.txt", "r")as file:
+#         for line_number,line in enumerate(file,start=1):
+#             if search_word in line .lower():
+#                 count += 1
+#                 print(f"Found on line {line_number}:{line.strip()}")
+#     print("Total matching lines:",count)
+# except ValueError as e:
+#     print("Invalid input:",e)
+# except FileNotFoundError:
+#     print("File not found.")
+# except OSError as e:
+#     print("File operation failed:",e)
+
+
+# use finally to  perfrom cleanup
+# file=None
+# try:
+#     file=open("welcome.txt","r")
+#     data=file.read()
+#     print(data)
+# except FileNotFoundError:
+#     print("File not found.")
+# except OSError as e:
+#     print("File error:",e)
+# finally:
+#     if file is not None:
+#         file.close()
+# print("Cleanup operation completed.")
+
+
+#store student records in a csv file 
+# import csv
+# from pathlib import Path
+# FILE_PATH=Path("student_records.csv")
+# def add_student():
+#     student_id =input("Enter student ID:").strip()
+#     name=input("Enter student name:").strip()
+#     course=input("Enter course:").strip()
+#     try:
+#         marks=float(input("Enter marks:"))
+#         if not student_id or not name or not course:
+#             raise ValueError("All fields are required.")
+#         if not 0 <= marks <=100:
+#             raise ValueError("Marks must be between 0 and 100.")
+#         file_existe=FILE_PATH.exists()
+#         with FILE_PATH.open(
+#             "a",
+#             newline="",
+#             encoding="utf-8"
+
+#         )as file:
+#             writer=csv.writer(file)
+#             if not file_exists:
+#                 writer.writerow(
+#                     ["Student ID","Name","Course","Marks"]
+
+#                 )
+#             writer.writerow(
+#                 [student_id,name,course,marks]
+
+#             )
+#         print("Student record saved.")
+#     except ValueError as e:
+#         print("Invalid input:",e)
+#     except OSError as e:
+#         print("File error:",e)
+# add_student()
+
+
+#read csv records and skip invalid rows
+# import csv 
+# try:
+#     with open(
+#         "student_records.csv",
+#         "r",
+#         newline="",
+#         encoding="utf-8"
+#     ) as file:
+#         reader=csv.DictReader(file)
+#         for row_number,row in enumerate(reader,start=2):
+#             try:
+#                 student_id =row["Student ID"].strip()
+#                 name=row ["Name"].strip()
+#                 course=row["Course"].strip()
+#                 marks=float(row["marks"])
+#                 if not student_id or not name or not course:
+#                     raise ValueError("Missing required field.")
+#                 if not 0 <= marks <=100:
+#                     raise ValueError("Marks must be between 0 and 100.")
+#                 print(
+#                     student_id,
+#                     name,
+#                     course,
+#                     marks
+#                 )
+#             except(ValueError,KeyError,AttributeError) as e:
+#                 print(f"Skipping invalid row {row_number}:{e}")
+# except FileNotFoundError:
+#     print("CSV file mot found.")
+# except OSError as e:
+#     print("Unable to read CSV file:",e)
+# except csv.Error as e:
+#     print("CSV parsing error:",e)
+#store and read json data 
+# import json
+# employee={
+#     "employee_id":101,
+#     "name":"Sumit",
+#     "department":"Accounts",
+
+# }
+# try:
+#     with open("employee.json","w",encoding="utf-8")as file:
+#         json.dump(employee,file,indent=4)
+#     print("Employee data saved successfully.")
+# except OSError as e:
+#     print("Unable to save employee data :",e)
+
+
+#read the json file
+# import json
+# try:
+#     with open("employee.json","r",encoding="utf-8") as file:
+#         employee=json.load (file)
+#         print("Employee ID:",employee["employee_id"])
+#         print("Name:",employee["name"])
+#         print("department:",employee["department"])
+#         print("salary:",employee["salary"])
+# except FileNotFoundError:
+#     print("Employee file not found.")
+# except json.JSONDecodeError as e:
+#     print("Invalid Json format:",e)
+# except KeyError as e:
+#     print("Required employee field is missing:", e)
+# except OSError as e:
+#     print("File error:",e)
+                
+
+#creade a logging system
+# import logging
+# logging.basicConfig(
+#     filename="application.log",
+#     level=logging.INFO,
+#     format="%(asctime)s-%(levelname)s-%(message)s",encoding="utf-8"
+
+
+# )
+# try:
+#     number=int(input("Enter a number:"))
+#     result=100/number
+#     print("Result:",result)
+#     logging.info("Calculation completed successfully.")
+# except ValueError:
+#     print("Please enter a valid integer.")
+#     logging.exception("Invalid integer entered.")
+# except ZeroDivisionError:
+#     print("Division by zero is not allowed. ")
+#     logging.exception("Division by zero attempted.")
+# except OSError as e:
+#      print("Operating system error:",e)
+#      logging .exception("An operating system error occurred.")
+                      
+
+#create a custom exception
+# class InvalidMarksError(Exception):
+#     pass
+# def validate_marks(marks):
+#     if marks < 0 or marks>100:
+#         raise InvalidMarksError(
+#             "Marks must be between 0 and 100."
+
+#         )
+#     return marks 
+# try:
+#     marks=float(input("Enter marks:"))
+#     validate_marks(marks)
+#     print("Valid marks:",marks)
+# except ValueError:
+#     print("Enter a valid numeric value.")
+# except InvalidMarksError as e:
+#     print("Validation error:",e)
+
+
+#create a file backup system 
+# import shutil
+# from pathlib import Path
+# source = Path("student.txt")
+# backup = Path("students_backup.txt")
+# try:
+#     if not source.is_file():
+#         raise FileNotFoundError("Student file does not exist.")
+#     shutil.copy2(source,backup)
+#     print("Backup created successfully.")
+# except FileNotFoundError as e:
+#     print("Error:",e)
+# except PermissionError:
+#     print("Permission denied.")
+# except OSError as e:
+#     print("Backup failed:",e)
+
+
+#safely update a file using a temporay file
+# from pathlib import Path
+# import os 
+# source = Path("student.txt")
+# temporary=Path("students.tmp")
+# def update_file():
+#     try:
+#         if not source.is_file():
+#             raise FileNotFoundError("Original file not found.")
+#         with source.open("r",encoding="utf-8") as file:
+#             date =file.read()
+#         update_date=date.replace(
+#             "Sumit",
+#             "Ankit Singh"
+
+#         )
+#         with temporary.open("w",encoding="utf-8") as file:
+#             file.write(update_date)
+#             file.flush()
+#             os.fsync(file.fileno())
+#         os.replace(temporary,source)
+#         print("File updated successfully.")
+#     except FileNotFoundError as e:
+#         print("Error:",e)
+#     except PermissionError:
+#         print("Permission denied.")
+#     except OSError as e:
+#         print("Update failed:",e)
+#         try:
+#             temporary.unlink(missing_ok=True)
+#         except OSError:
+#             print("Warning: Temporary file cleanup failed.")
+# update_file()
+
+
+#process a large file in chunks
+# from pathlib import Path
+# file_path=Path("server.log")
+# try:
+#     error_count=0
+#     with file_path.open("r", encoding="utf-8") as file:
+#         for line in file:
+#             if "ERROR" in line.upper():
+#                 error_count +=1
+#     print("TOtal error lines:",error_count)
+# except FileNotFoundError:
+#     print("Log file not found.")
+# except UnicodeDecodeError:
+#     print("The file could not be decoded using UTF-8.")
+# except OSError as e:
+#     print("Unable to process the file:",e)
+
+
+#catch specific exceptions
+# try:
+#     with open ("date.txt","r") as file:
+#         print(file.read())
+# except:
+#     print("Something went wrong.")
+#prefer:
+# try:
+#     with open ("date.txt","r")as file:
+#         print(file.read())
+# except FileNotFoundError:
+#     print("File does not exist.")
+# except PermissionError:
+#     print("Permission denied.")
+# except OSError as e:
+#     print("File error:",e)
+
+
+#understand the purpose of each block
+# try:
+#     with open ("date.txt","r")as file:
+#         date=file.read()
+# except FileNotFoundError:
+#     print("File not found.")
+# else:
+#     print("File read successfully.")
+# finally:
+#     print("File operarion finished.")
+
+
+ 

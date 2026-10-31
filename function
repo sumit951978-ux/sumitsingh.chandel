@@ -1,0 +1,745 @@
+#greet functoin baniye jo welcome message print kare
+# def greet():
+#     print("hello to python programming")
+# greet()
+#numbers ka square return karein
+# def square(n):
+#     return n *n
+# result = square (8)
+# print(result)
+#add to numbers
+# def add(a,b):
+#     return a+b
+# print(add(25,35))
+#area of rectangle
+# def rectangle_area(length,width):
+#     return length * width
+# area = rectangle_area(10,15)
+# print("area =",area)
+#even or odd 
+# def check_even_odd(number):
+#     if number % 2 == 0:
+#         return "even"
+#     else:
+#         return"odd"
+# print(check_even_odd(25))
+# print(check_even_odd(40))
+#maximum of two numbers
+# def maximum(a,b):
+#     if a > b:
+#         return a
+#     else:
+#         return b
+# print(maximum(50,80))
+#positive,negative or zero
+# def check_numbers(n):
+#     if n > 0:
+#         return"positive"
+#     elif n < 0:
+#         return "negative"
+#     else:
+#         return "zero"
+# print(check_numbers(25))
+# print(check_numbers(-10))
+# print(check_numbers(0))
+#celsius to fahrenheit
+# def celsius_to_fahrenheit(c):
+#     return(c*9 /5)+32
+# print(celsius_to_fahrenheit(25))
+#level2 conditions return
+#student result
+# def result(marks):
+#     if marks < 0 or marks > 100:
+#         return "Invalid Marks"
+#     if marks >=90:
+#         return "A+"
+#     elif marks >=80:
+#         return "A"
+#     elif marks >=70:
+#         return "B"
+#     elif marks >= 60:
+#         return "c"
+#     elif marks >=50:
+#         return "D"
+#     else:
+#         return "File"
+# print(result(95))
+# print(result(76))
+# print(result(45))
+#simpal calculater
+# def calculator(a,b,operator):
+#     if operator =="+":
+#         return a+b
+#     elif operator == "-":
+#         return a-b
+#     elif operator == "*":
+#         return a*b
+#     elif operator == "/":
+#         if b ==0:
+#             return "cannot divide by zero"
+#         return a/b
+#     elif operator =="%":
+#         return a%b
+#     else:
+#         return "Invalid operator"
+# print(calculator(20,5,"+"))
+# print(calculator(20.,5,"*"))
+# print(calculator(20,5 ,"/"))
+#factorial
+# def factorial(n):
+#     fact = 1
+#     for i in range (1,n+1):
+#         fact = fact *i
+#     return fact
+# print(factorial(5))
+#prime number
+# def is_prime(n):
+#     if n < 2:
+#         return False
+#     for i in range (2,n):
+#         if n % i == 0: 
+#             return False
+#     return True
+# print(is_prime(17))
+# print(is_prime(20))
+#count digits
+# def count_digits(n):
+#     n = abs(n)
+#     if n ==0:
+#         return 1
+#     count = 0
+#     while n > 0:
+#         n = n//10
+#         count +=1
+#     return count
+# print(count_digits(987654))
+#reverse numbers
+# def reverse_number(n):
+#     reverse = 0
+#     while n > 0:
+#         digit =n % 10
+#         reverse =reverse * 10 + digit
+#         n = n // 10
+#     return reverse
+# print(reverse_number(12345))
+#palindrome number
+# def is_palindrome(n):
+#     original = n
+#     reverse = 0
+#     while n > 0:
+#         digit = n % 10
+#         reverse = reverse * 10 + digit
+#         n = n // 10
+#     return original == reverse
+# print(is_palindrome(121))
+# print(is_palindrome(123))
+#count vowels
+# def count_vowels(text):
+#     count = 0
+#     for char in text.lower():
+#         if char in "aeiou":
+#             count += 1
+#     return count
+# print(count_vowels("Education"))
+#reverse string 
+# def reverse_string(text):
+#     reverse =""
+#     for char in text:
+#         reverse = char + reverse
+#     return reverse
+# print(reverse_string("sumit"))
+#count words
+# def count_words(sentence):
+#     words = sentence.split()
+#     return len(words)
+# print(count_words("python is easy to learn"))
+#list sum 
+# def list_sum(nubers):
+#     total = 0
+#     for number in numbers:
+#         total += number
+#     return total
+# numbers =[10,20,30,40]
+# print(list_sum(numbers))
+#largest element 
+# def largest(numbers):
+#     largest_number = numbers[0]
+#     for number in numbers:
+#         if number > largest_number:
+#             largest_number = number
+#     return largest_number
+# print(largest([10,50,30,80,40]))
+# remove duplicates
+# def remove_duplicates (numbers):
+#     result = []
+#     for number in numbers:
+#         if number not in result:
+#             result.append(number)
+#     return result
+# print(remove_duplicates([10,20,10,30,20,40]))           
+# second largest
+# def second_largest(numbers):
+#     unique_numbers = list(set(numbers))
+#     unique_numbers.sort()
+#     return unique_numbers[-2]
+# print(second_largest([10,50,30,80,40]))
+#default argument
+# def student(name,course="python"):
+#     print(name,"is studying",course)
+# student("rahul")
+# student("amit","Data Analytics")
+#keyword arguments
+# def employee(name,age,salary,department):
+#     print("Name:",name)
+#     print("Age:",age)
+#     print("Salary:",salary)
+#     print("Department:",department)
+# employee(
+#     name="Rahul",
+#     age=25,
+#     salary=35000,
+#     department="IT"
+# )
+#args ka use mulitiple positional arguments receive karne ke liye hote h
+# def calculate_total(*numbers):
+#     total = 0
+#     for number in numbers:
+#         total += number
+#     return total
+# print(calculate_total(10,20,30))
+# print(calculate_total(10,20,30,40,50)) 
+#**kwargs
+# def student_details(**details):
+#     for key, value in details.items():
+#         print(key,":",value)
+# student_details(
+#     name="Rahul",
+#     age=22,
+#     course="python",
+#     city="Lucknow" 
+# )
+#**arge **kwargs
+# def emplyoee_data (*skills, **details):
+#     print("Skills:")
+#     for skill in skills:
+#         print("-",skills)
+#     print("\nEmployee Details:")
+#     for key, value in details.items():
+#         print(key,":", value)
+
+# emplyoee_data(
+#     "Python",
+#     "SQL",
+#     "Excel",
+#     name="Rahul",
+#     age=26,
+#     salary=45000
+# )
+#lambda square
+# square = lambda x: x*x
+# print(square(6))
+# print(square(10))
+#map()
+# numbers =[11,12,13,14,15]
+          
+# squares =list(map(lambda x: x*x,numbers))
+# print(squares)
+#filter()
+# numbers =[10,15,20,25,30,35,40]
+# result = list(
+#     filter(lambda x: x % 10 == 0, numbers)
+
+# )
+# print(result)
+#reduce()
+# from functools import reduce
+# numbers = [1,2,3,4,5]
+# result = reduce(
+#     lambda a,b: a*b, numbers
+
+
+# )
+# print(result)
+#map + filter
+# numbers =[1,2,3,4,5,6,7,8,9,10]
+# even_numbers = filter(
+#     lambda x: x% 2 ==0,numbers
+
+
+# )
+# squares = map(
+#     lambda x: x*x, even_numbers
+
+# )
+# print(list(squares))
+#recursive factorial
+# def factorial(n):
+#     if n == 0 or n == 1:
+#         return 1
+#     return n * factorial(n-1)
+# print(factorial(5))
+# recursive countdown
+# def countdown(n):
+#     if n == 0:
+#         print("Start!")
+#         return
+#     print(n)
+#     countdown(n-1)
+# countdown(165)
+#recursive sum
+# def recursive_sum(n):
+#     if n == 0:
+#         return 0
+#     return n + recursive_sum(n-1)
+# print(recursive_sum(5))
+#fibonacci
+# def fibonacci (n):
+#     a =0
+#     b =1
+#     for i in range(n):
+#         print(a, end=" ")
+#         a,b =b,a+b
+# fibonacci(7)
+#recursive reverse string
+# def reverse_string(text):
+#     if len (text) == 0:
+#         return ""
+#     return reverse_string(text[1:]) + text[0]
+# print(reverse_string("python"))
+#local vs global variable 
+# x = 100
+# def test():
+#     x =50
+#     print("Local:",x)
+# test()
+# print("Global:", x)
+#global keybord
+# counter = 0
+# def increment():
+#     global counter
+#     counter += 1
+# increment()
+# increment()
+# increment()
+# print(counter)
+#return muitiple values
+# def calculate(a,b):
+#     addition = a+b
+#     difference = a-b
+#     product = a* b
+#     division = a/b
+#     return addition, difference,product,division
+# result= calculate(20,5)
+# print("Sum:",result[0])
+# print("Difference:",result[1])
+# print("Product:",result[2])
+# print("Division:",result[3])
+#fuction as argument
+# def add(a,b):
+#     return a+b
+# def calculate(operation,a,b):
+#     return operation(a,b)
+# result = calculate(add,10,20)
+# print(result)
+#function  returning function 
+# def multiplier(x):
+#     def multiply(number):
+#         return number * x
+#     return multiply
+# double =multiplier(2)
+# triple =multiplier(3)
+# print(double(10))
+# print(triple(10)) 
+#basic decorator
+# def decorator(function):
+#     def wrapper():
+#         print("function started")
+#         function()
+#         print("function completed")
+#     return wrapper
+# @decorator
+# def hello():
+#     print("Hello")
+# hello()
+#timing decorator
+# import time
+# def timer(function):
+#     def wrapper():
+#         start = time.time()
+#         function()
+#         end = time.time()
+#         print("Execution Time:",end -start,"seconds")
+#     return wrapper
+# @timer
+# def test():
+#     for i in range(1000000):
+#         pass
+# test()
+# login decorator
+#logged_in =True
+# def login_required(function):
+#     def wrapper():
+#         if logged_in:
+#             function()
+#         else:
+#             print("Please login first")
+#     return wrapper
+# @login_required
+# def dashboard():
+#     print("Welcome to Dashboard")
+# dashboard()    
+# banking system
+balance = 0
+# def deposit(amount):
+#     global balance
+#     if amount <= 0:
+#         print("Invalid amount")
+#         return
+#     balance +=amount
+#     print("Deposited:",amount)
+# def withdraw(amount):
+#     global balance
+#     if amount <=0:
+#         print("Invalid amount")
+#     elif amount > balance:
+#         print("Insufficient Balance")
+#     else:
+#         balance -=amount
+#         print("Withdrawn:",amount)
+# def check_balance():
+#     print("Balance:",balance)
+# deposit(10000)
+# withdraw(2500)
+# check_balance()
+#electricity bill
+# def calculate_bill(units):
+#     if units <=100:
+#         bill = units*5
+#     elif units <=200:
+#         bill =(100*5) + ((units-100)*7)
+#     elif units <=300:
+#         bill =(100*5) +(100*7) +((units-200) *10)
+#     else:
+#         bill =(
+#             (100*5)
+#             +(100*7)
+#             +(100*10)
+#             +((units-300)*12)
+        
+#         )
+#     return bill
+# print("Electricity Bill:",calculate_bill(350))
+#employee salary
+# def calculate_hra(basic):
+#     return basic *0.20
+# def calculate_da(basic):
+#     return basic * 0.10
+# def calculate_pf(basic):
+#     return basic *0.12
+# def calculate_salary(basic):
+#     hra = calculate_hra(basic)
+#     da = calculate_da(basic)
+#     pf = calculate_pf(basic)
+#     gross =basic+ hra +da
+#     net = gross - pf
+#     return gross,pf,net
+# basic =30000
+# gross,pf,net =calculate_salary(basic)
+# print("Basic:",basic)
+# print("Gross Salary:",gross)
+# print("PF:",pf)
+# print("Net Salary:",net)
+#shopping billing system
+# def calculate_subtotal(cart):
+#     total =0
+#     for product,price,quantity,in cart:
+#         total += price*quantity
+#     return total
+# def calculate_discount(total):
+#     if total >=50000:
+#         return total*0.10
+#     elif total >=20000:
+#         return total*0.05
+#     return 0
+# def calculate_gst(amount):
+#     return amount *0.18
+# def generate_bill(cart):
+#     subtotal =calculate_subtotal(cart)
+#     discount = calculate_discount(subtotal)
+#     taxable_amount=subtotal - discount
+#     gst = calculate_gst(taxable_amount)
+#     final_amount =taxable_amount+gst
+#     print("Subtotal:",subtotal)
+#     print("Discount:",discount)
+#     print("GST:",gst)
+#     print("Final Amount:",final_amount)
+# cart =[
+#     ("Laptop",60000,1),
+#     ("Mouse",1000,2),
+#     ("keyborad",2000,1)
+
+    
+# ]
+# generate_bill(cart)
+#student management system
+# students={}
+# def add_student(student_id,name,marks):
+#     students[student_id]={
+#         "name":name,
+#         "marks":marks
+
+#     }
+#     print("Student Added")
+# def search_student(student_id):
+#     if student_id in students:
+#         print(students[student_id])
+#     else:
+#         print("Student Not Found")
+#     def calculate_result(student_id):
+#         if student_id not in students:
+#             print("Student Not Found")
+#             return
+#         marks=students[student_id]["marks"]
+#         if marks >=90:
+#             grade="A+"
+#         elif marks >=80:
+#             grade ="A"
+#         elif marks >=70:
+#             grade ="B"
+#         elif marks >=60:
+#             grade ="C"
+#         elif marks >=50:
+#             grade ="D"
+#         else:
+#             grade = "Fail"
+#         print("Grade:",grade)
+#     def display_students():
+#         for student_id, data in students.items():
+#             print(
+#                 student_id,
+#                 data["name"],
+#                 data["marks"]
+#              )
+# add_student(101,"Riya",85)
+# add_student(102,"Amit",92)
+
+# search_student(101)
+# employee management system
+# ep_id, employee in employees.items():
+#         print(emp_id,employee)
+# add_employee(101,"Rahul","IT",50000)
+# add_employee(102,"Amit","HR",40000)
+# serach_employee(101)
+# update_salary(101,55000)
+# display_employees()
+#       print("Employee Not Found")
+# def display_employees():
+#     for em mployees={}
+# def add_employee(emp_id,name,department,salary):
+#     employees[emp_id]={
+#         "name":name,
+#         "department":department,
+#         "salary": salay
+#     }
+# def serach_employee(emp_id):
+#     if emp_id in employees:
+#         print(employees[emp_id])
+#     else:
+#         print("Employee Not found")
+# def update_salary(emp_id,salary):
+#     if emp_id in employees:
+#         employees[emp_id]["salary"] =salary 
+#         print("Salary Updated")
+#     else:
+#         print("Employee Not Founnd")
+# def delete_employee(emp_id):
+#     if emp_id in employees:
+#         del employees [emp_id]
+#         print("Employee Deleted")
+#     else:
+ #  print("Employee Not Found")
+# def display_employees():
+#     for em mployees={}
+# def add_employee(emp_id,name,department,salary):
+#     employees[emp_id]={
+#         "name":name,
+#         "department":department,
+#         "salary": salay
+#atm system
+# balance=10000
+# pin="1234"
+# def login():
+#     entered_pin=input("Enter PIN:")
+#     if entered_pin==pin:
+#         print("Login Successful")
+#         return True
+#     print("Invalid PIN")
+#     return False
+# def check_balance():
+#     print("Balance:",balance)
+# def deposit():
+#     global balance
+#     amount = float (input("Enter amount:"))
+#     if amount >0:
+#         balance +=amount
+#         print("Amount Deposited")
+#     else:
+#         print("Invalid Amount")
+# def withdraw():
+#     global balance
+#     amount = float(input("Enter amount:"))
+#     if amount >balance:
+#         print("Insufficient Balance")
+#     elif amount <=0:
+#         print("Invalid Amount")
+#     else:
+#         balance -= amount
+#         print("Please collect your cash")
+# def atm():
+#     if not login():
+#         return
+#     while True:
+#         print("""
+#         1.Check Balance
+#         2.Deposit
+#         3.Withdraw
+#         4.Exit
+
+
+#         """)
+#         choice = input("Enter Choice:")
+#         if choice =="1":
+#             check_balance()
+#         elif choice =="2":
+#             deposit()
+#         elif choice =="3":
+#             withdraw()
+#         elif choice =="4":
+#             print("Thank You")
+#             break
+#         else:
+#             print("Invalid Choice")
+# atm()
+# attempt =0
+# while attempt <3:
+#     pin =input("Enter your Pin :")
+#     if pin =="1234":
+#         print("Access Grant")
+#         break
+#     else:
+#         print("Wrong Pin")
+#         attempt +=1
+# else:
+# print("Card Blocked")
+#inventory management
+# inventory={}
+# def add_product(product_id,name,price,quantity):
+#     inventory[product_id]={
+#         "name": name,
+#         "price":price,
+#         "quantity":quantity
+
+#     }
+#     print("Product Added")
+# def update_stock(product_id,quantity):
+#     if product_id in inventory:
+#         inventory[product_id]["quantity"]+=quantity
+#         print("Stock Updated")
+#     else:
+#         print("Product Not Found")
+# def sell_product(product_id,quantity):
+#     if product_id not in inventory:
+#         print("Product Not Found")
+#         return
+#     if inventory[product_id]["quantity"] < quantity:
+#         print("Insufficient Stock")
+#         return
+#     inventory[product_id]["quantity"]-=quantity
+#     print("Product Sold")
+# def check_stock(product_id):
+#     if product_id in inventory:
+#         print(
+#             "Available:",
+#             inventory[product_id]["quantity"]
+
+#         )
+# def low_stock_report():
+#     for product_id,product in inventory.items():
+#         if product["quantity"] <10:
+#             print(
+#                 product_id,
+#                 product["name"],
+#                 product["quantity"]
+
+#             )
+# add_product(101,"Laptop",60000,5)
+# add_product(102,"Mouse",1000,25)
+# update_stock(101,10)
+# sell_product(101,3)
+# check_stock(101)
+# low_stock_report()
+#function based data analyis
+# sales=[
+#     {"product":"Laptop","category":"IT","amount":60000},
+#     {"product": "Mouse","category":"IT","amount":1000},
+#     {" product": "Keyboard","category":"IT","amount":2000},
+#     {"product":"Chair","category":"Furniture","amount":5000}
+
+# ]
+# def total_sales():
+#     total =0
+#     for sale in sales:
+#         total +=sale["amount"]
+#     return total
+# def average_sales():
+#     return total_sales() /len(sales)
+# def highest_sale():
+#     highest =sales[0]
+#     for sale in sales:
+#         if sale ["amount"] > highest["amount"]:
+#             highest = sale
+#     return highest
+# def lowest_sale():
+#     lowest = sales[0]
+#     for sale in sales:
+#         if sale["amount"] < lowest ["amount"]:
+#             lowest =sale
+#     return lowest
+# def category_sales():
+#     result ={}
+#     for sale in sale:
+#         category =sale["category"]
+#         amount = sale ["amount"]
+#         if category not in result:
+#             result[category] =0
+#         result[category] +=amount
+#     return result 
+# print("Total:",total_sales())
+# print("Average:",average_sales())
+# print("Highest:",highest_sale())
+# print("Lowest:",lowest_sale())
+# print("Category Sales:",category_sale()) 
+#                
+    
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
